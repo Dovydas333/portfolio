@@ -1,0 +1,329 @@
+/* ================= GLOBAL ================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", Arial, sans-serif;
+  background: #f5f7fa;
+  color: #1a1a1a;
+  line-height: 1.6;
+}
+
+.wrapper {
+  width: min(1200px, 90%);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+section {
+  padding: 100px 0;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ================= HEADER ================= */
+
+.header {
+  background: #ffffff;
+  padding: 20px 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header nav ul {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+.header nav a {
+  font-weight: 600;
+  color: #0a3d62;
+  transition: 0.3s ease;
+}
+
+.header nav a:hover {
+  color: #1e90ff;
+}
+
+.logo {
+  color: #0a3d62;
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+/* ================= HERO ================= */
+
+.hero {
+  background: url("garazas.jpg") center/cover no-repeat;
+  text-align: center;
+  color: white;
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 80vh;
+  padding: 0;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.hero .wrapper {
+  position: relative;
+  z-index: 2;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.hero1 {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+}
+
+.btn {
+  display: inline-block;
+  background: #1e90ff;
+  padding: 14px 32px;
+  color: white;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background: #0a74d6;
+  transform: translateY(-3px);
+}
+
+/* ================= ABOUT ================= */
+
+.about {
+  text-align: center;
+}
+
+.about .wrapper {
+  max-width: 700px;
+}
+
+.about h2 {
+  color: #0a3d62;
+}
+
+.about .text {
+  margin-top: 20px;
+  color: #444;
+}
+
+/* ================= SERVICES ================= */
+
+.services {
+  text-align: center;
+}
+
+.services h2 {
+  color: #0a3d62;
+  margin-bottom: 40px;
+}
+
+.services .wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+.services h2 {
+  grid-column: 1 / -1;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.12);
+}
+
+.service {
+  margin-bottom: 12px;
+  font-size: 1.3rem;
+  color: #0a3d62;
+}
+
+.textas {
+  color: #444;
+}
+
+/* ================= STATS ================= */
+
+.stats {
+  background: #0a3d62;
+  color: white;
+  padding: 80px 0;
+}
+
+.stats .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  text-align: center;
+}
+
+.stats h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.stats p {
+  opacity: 0.9;
+}
+
+/* ================= TESTIMONIALS ================= */
+
+.testimonials {
+  text-align: center;
+}
+
+.testimonials h2 {
+  color: #0a3d62;
+  margin-bottom: 40px;
+}
+
+.testimonial-card {
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.testimonial-card .stars {
+  font-size: 1.5rem;
+  color: #f1c40f;
+}
+
+.testimonial-card .quote {
+  font-style: italic;
+  margin: 15px 0;
+  color: #444;
+}
+
+.testimonial-card .author {
+  font-weight: 700;
+  color: #444;
+}
+
+/* ================= CONTACT ================= */
+
+.contact h2 {
+  color: #0a3d62;
+  margin-bottom: 25px;
+}
+
+.contact-info {
+  margin-top: 20px;
+  color: #444;
+}
+
+.contact-info p {
+  margin: 10px 0;
+}
+
+.contact-hours {
+  margin-top: 30px;
+}
+
+.contact-hours h3 {
+  color: #0a3d62;
+  margin-bottom: 10px;
+}
+
+.contact-hours p {
+  color: #444;
+  margin: 8px 0;
+}
+
+/* ================= FOOTER ================= */
+
+.footer {
+  background: #0a3d62;
+  color: white;
+  text-align: center;
+  padding: 25px 0;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+  .header nav {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .header nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .hero h2 {
+    font-size: 2.2rem;
+  }
+
+  .hero1 {
+    font-size: 1rem;
+  }
+
+  .stats .wrapper {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  section {
+    padding: 70px 0;
+  }
+}
