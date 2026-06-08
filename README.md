@@ -9,4 +9,6 @@ Technologies used:
 * Git
 * GitHub
 
+https://dovydas333.github.io/portfolio/
+
 More projects will be added as I continue learning.
