@@ -3,11 +3,10 @@
 My personal website built while learning front-end development.
 
 Technologies used:
-
-* HTML
-* CSS
-* Git
-* GitHub
+- HTML5
+- CSS3
+- JavaScript (learning)
+- GitHub Pages (basic deployment)
 
 https://dovydas333.github.io/portfolio/
 
