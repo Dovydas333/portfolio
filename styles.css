@@ -1,0 +1,283 @@
+/* =========================================
+   1. RESET
+   ========================================= */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, figure {
+  margin: 0;
+  padding: 0;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+/* =========================================
+   2. BASE
+   ========================================= */
+
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  line-height: 1.6;
+  background-color: #e1e5f2;
+  color: #022b3a;
+  font-size: 16px;
+}
+
+h1, h2, h3 {
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+
+/* =========================================
+   3. LAYOUT
+   ========================================= */
+
+header {
+  padding: 20px 0;
+}
+
+main {
+  padding: 10px 0;
+}
+
+footer {
+  padding: 20px 0;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+
+/* =========================================
+   4. NAVIGATION
+   ========================================= */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+nav ul {
+  display: flex;
+  gap: 15px;
+}
+
+nav a {
+  border: 1px solid transparent;
+}
+
+nav a:hover {
+  border: 1px solid #022b3a;
+  background: #022b3a;
+  color: white;
+}
+
+#webdove {
+  width: 140px;
+  display: block;
+}
+
+
+/* =========================================
+   5. HERO
+   ========================================= */
+
+.hero h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.hero1 {
+  font-size: 1.3rem;
+  color: #444;
+  max-width: 600px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.btn {
+  background: #022b3a;
+  color: white;
+  padding: 12px 28px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: 0.2s ease;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.btn:hover {
+  opacity: 0.85;
+  transform: translateY(-2px);
+}
+
+
+/* =========================================
+   6. ABOUT ME
+   ========================================= */
+
+.about {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.aboutme {
+  font-size: 1.3rem;
+  color: #444;
+  max-width: 600px;
+  margin: 20px auto;
+  line-height: 1.6;
+}
+
+#profiline {
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 40px auto 0;
+  display: block;
+}
+
+
+/* =========================================
+   7. PROJECTS
+   ========================================= */
+
+.projects1 {
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+}
+
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.project-card h3 {
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.project-card a {
+  margin-top: auto;
+}
+
+
+/* =========================================
+   8. SKILLS
+   ========================================= */
+
+.skills1 {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.skills-list {
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+
+/* =========================================
+   9. GENERAL STRUCTURE
+   ========================================= */
+
+section {
+  padding: 40px 0;
+}
+
+article {
+  margin-bottom: 40px;
+}
+
+
+/* =========================================
+   10. RESPONSIVE
+   ========================================= */
+
+@media (max-width: 600px) {
+  h2.hero {
+    font-size: 2.2rem;
+  }
+
+  #profiline {
+    width: 260px;
+    height: 260px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+/* =========================================
+   10. HR
+   ========================================= */
+  
+hr {
+  border: none;
+  height: 2px;
+  width: 300px;
+  margin: 40px auto;
+  background: linear-gradient(to right, transparent, #022b3a, transparent);
+}
+
